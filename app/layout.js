@@ -3,6 +3,8 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import { LoaderProvider } from '@/providers/LoaderContextProvider';
 import { ReducerProvider } from '@/providers/useReducerProvider';
+import { HistoryProvider } from '@/providers/HistoryContextProvider';
+import { PlayListProvider } from '@/providers/PlayListContextProvier';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,7 +19,11 @@ export default function RootLayout({ children }) {
 			<AuthProvider>
 				<LoaderProvider>
 					<ReducerProvider>
-						<body className={inter.className}>{children}</body>
+						<HistoryProvider>
+							<PlayListProvider>
+								<body className={inter.className}>{children}</body>
+							</PlayListProvider>
+						</HistoryProvider>
 					</ReducerProvider>
 				</LoaderProvider>
 			</AuthProvider>

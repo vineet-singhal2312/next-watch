@@ -21,7 +21,6 @@ export const VideoListCard = ({ item }) => {
 			console.log(error, 'axios error');
 		}
 	};
-	console.log(item.src);
 	return (
 		<>
 			<Link className="link" href={`/videos/${item._id}`}>
@@ -32,8 +31,6 @@ export const VideoListCard = ({ item }) => {
 					}}
 				>
 					{item.img && <Image src={item.img} className="video-list-videoplayer" width={500} height={500} alt="product list img" />}
-					{/* <img alt="img" /> */}
-
 					<div className="product-list-card-content">
 						<h4 className="product-list-card-name">{item.name}</h4>
 						<div className="product-list-card-details">

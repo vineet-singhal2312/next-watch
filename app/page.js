@@ -11,19 +11,22 @@ import { VideoList } from '../components/home/VideoList';
 const Home = () => {
 	const { isLoader, setIsLoader } = useLoader();
 	const { dispatch, setIsSideNav } = useReduce();
+
+	const fetchInitialData = async () => {
+		try {
+			setIsLoader(true);
+			const { data } = await axios.get('https://blue-aware-cougar.cyclic.cloud/videos');
+			dispatch({ type: 'INITIALIZE_DATA', payload: data });
+			setIsLoader(false);
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
 	useEffect(() => {
-		setIsLoader(true);
-		(async function () {
-			try {
-				const { data } = await axios.get('https://blue-aware-cougar.cyclic.cloud/videos');
-				console.log({ data });
-				dispatch({ type: 'INITIALIZE_DATA', payload: data });
-				setIsLoader(false);
-			} catch (error) {
-				console.log(error);
-			}
-		})();
+		fetchInitialData();
 	}, [dispatch, setIsLoader]);
+
 	const closeSideNav = () => {
 		document.getElementById('sideNav').style.width = '0%';
 		setIsSideNav(false);

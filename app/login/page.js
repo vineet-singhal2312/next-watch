@@ -16,7 +16,6 @@ const LogIn = () => {
 	const { isSmallLoader, setIsSmallLoader } = useLoader();
 
 	function loginUser(res) {
-		console.log('loginUser');
 		setLogin(true);
 
 		setToken(res.data.token);
@@ -40,7 +39,6 @@ const LogIn = () => {
 		setToken(null);
 	};
 	const LogInHandler = async (e) => {
-		console.log('Hi');
 		e.preventDefault();
 		setIsSmallLoader(true);
 		try {
