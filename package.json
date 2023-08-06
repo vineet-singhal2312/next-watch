@@ -1,16 +1,25 @@
 {
-  "name": "next-watch",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+	"name": "next-watch",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"next": "13.4.12",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"axios": "^0.21.1",
+		"history": "^5.0.0",
+		"react-icons": "^4.2.0",
+		"react-player": "^2.9.0",
+		"react-router": "^6.0.0-beta.0",
+		"react-router-dom": "^6.0.0-beta.0",
+		"react-scripts": "4.0.3",
+		"uuid": "^8.3.2",
+		"web-vitals": "^1.1.1"
+	}
 }

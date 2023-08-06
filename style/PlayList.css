@@ -1,0 +1,181 @@
+.page-heading-playlist {
+  width: 120px;
+  margin: 1rem;
+}
+.playlist-modal {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  height: 350px;
+  width: 300px;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+}
+.playlist-modal-title {
+  width: 88%;
+  height: 15%;
+  background-color: var(--primaryColor);
+  border-bottom: 1px solid var(--secondaryColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+.playlist-modal-list {
+  width: 100%;
+  height: 70%;
+  background-color: var(--primaryColor);
+}
+.playlist-modal-list-list {
+  text-align: initial;
+  padding: 0rem;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.playlist-modal-list-list::-webkit-scrollbar {
+  display: none;
+}
+.playlist-modal-list-item {
+  padding: 0.5rem 1rem;
+}
+.playlist-modal-list-item:hover {
+  cursor: pointer;
+  background: rgba(17, 139, 211, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.playlist-modal-input-div {
+  width: 100%;
+  height: 15%;
+  background-color: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--secondaryColor);
+}
+.playlist-modal-input {
+  width: 70%;
+  height: 70%;
+  color: var(--textColor);
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+.playlist-modal-input-button {
+  width: 20%;
+  height: 70%;
+  color: var(--textColor);
+  background-color: transparent;
+  border: 0;
+}
+.close-model {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.playlist-videos-main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.playlist-card {
+  width: 100%;
+  min-height: 400px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.playlist-name-div {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.playlist-videos {
+  width: 100%;
+  min-height: 350px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.empty-playlist-videos {
+  width: 100%;
+  min-height: 350px;
+  background-color: transparent;
+  display: flex;
+  /* padding-left: 1rem; */
+  /* margin-left: 1rem; */
+  justify-content: flex-start;
+  align-items: center;
+}
+.empty-discription {
+  margin: 1rem;
+}
+.playlist-name {
+  margin: 1rem;
+}
+.playlist-videos-card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 0 rgb(0 0 0 / 30%);
+}
+
+.playlist-videos-card-content {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.playlist-videos-card-delete-btn {
+  background-color: transparent;
+  width: 15%;
+  height: 22%;
+  float: right;
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+}
+.playlis-delete-btn {
+  background-color: transparent;
+  width: 5%;
+  height: 35%;
+
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+  cursor: pointer;
+
+  font-size: 1.5rem;
+}
+.playlist-card-img {
+  width: 90%;
+  height: 55%;
+}
+@media only screen and (max-width: 500px) {
+  .playlist-modal {
+    top: 25%;
+    left: 10%;
+    width: 275px;
+  }
+}

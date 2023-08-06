@@ -1,0 +1,60 @@
+.page-heading-watchlater {
+  width: 192px;
+  margin: 1rem;
+}
+.watch-later-main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.watch-later-btn {
+  width: 5%;
+  height: 5vh;
+  border: 1px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  background-color: transparent;
+}
+.watch-later-list {
+  width: 100%;
+  min-height: 95vh;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.watchlater-card {
+  width: 300px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 0 rgb(0 0 0 / 30%);
+}
+.watchlater-card-content {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.watchlater-card-delete-btn {
+  background-color: transparent;
+  width: 15%;
+  height: 22%;
+  /* align-self: flex-end; */
+  float: right;
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+}
+.watchlater-card-img {
+  width: 90%;
+  height: 55%;
+}

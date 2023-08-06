@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sign-up {
+  background-color: var(--primaryColor);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  font-size: 12pt;
+  font-family: "Spartan";
+  color: var(--textColor);
+  display: grid;
+  place-items: center;
+}
+.contact-us {
+  background: var(--primaryColor);
+  padding: 50px 100px;
+
+  border-top: 10px solid var(--secondaryColor);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: "Spartan";
+}
+
+input {
+  margin-bottom: 24pt;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 24pt;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+}
+
+span {
+  font-size: 8pt;
+}
+
+em {
+  color: #f45702;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: var(--textColor);
+  padding-left: 5px;
+  outline: none;
+}
+
+/* input:focus,
+textarea:focus {
+  border: 1px solid #6bd4b1;
+} */
+
+textarea {
+  resize: none;
+}
+.login-signup-button-div {
+  display: flex;
+}
+
+button {
+  height: 30px;
+  width: 130px;
+  margin: 0rem 0.3rem;
+
+  display: block;
+  float: right;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: var(--secondaryColor);
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+button:hover {
+  background: inherit;
+  color: var(--secondaryColor);
+  border-bottom: 2px solid var(--secondaryColor);
+}
+
+::selection {
+  background: #ffc7b8;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  border: 1px solid var(--secondaryColor);
+  -webkit-text-fill-color: #2a293e;
+  -webkit-box-shadow: 0 0 0px 1000px var(--textColor) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+@media only screen and (max-width: 500px) {
+  .contact-us {
+    padding: 30px 30px;
+    margin-top: 3rem;
+  }
+}
