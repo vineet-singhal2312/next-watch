@@ -31,7 +31,7 @@ export const HistoryCard = ({ item }) => {
 		<>
 			{' '}
 			<Link className="link history-card" href={`/videos/${item._id}`}>
-				<Image src={item.img} width={500} height={500} className="history-card-img" alt="img" />
+				<Image src={item.img} width={200} height={200} className="history-card-img" alt="img" />
 
 				<div className="history-card-content">
 					{item.name}

@@ -7,6 +7,8 @@ import { SideNav } from '../components/sideNav/SideNav';
 import { useReduce } from '../providers/useReducerProvider';
 import { useLoader } from '../providers/LoaderContextProvider';
 import { VideoList } from '../components/home/VideoList';
+import Interceptor from '@/providers/AxiosInterseptor';
+import { fetchVideos } from '@/utils/CachedApiHelper.js/utils';
 
 const Home = () => {
 	const { isLoader, setIsLoader } = useLoader();
@@ -15,7 +17,7 @@ const Home = () => {
 	const fetchInitialData = async () => {
 		try {
 			setIsLoader(true);
-			const { data } = await axios.get('https://blue-aware-cougar.cyclic.cloud/videos');
+			const { data } = await fetchVideos();
 			dispatch({ type: 'INITIALIZE_DATA', payload: data });
 			setIsLoader(false);
 		} catch (error) {
@@ -33,6 +35,7 @@ const Home = () => {
 	};
 	return (
 		<>
+			<Interceptor />
 			<Header />
 			<SideNav />
 			<div className="main" onClick={() => closeSideNav()}>

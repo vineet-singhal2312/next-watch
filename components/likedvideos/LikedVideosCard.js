@@ -12,7 +12,7 @@ export const LikedVideosCard = ({ item }) => {
 		<>
 			{' '}
 			<Link className="link like-videos-card" href={`/videos/${item._id}`}>
-				<Image width={500} height={500} src={item.img} className="like-videos-card-img" alt="img" />
+				<Image width={200} height={200} src={item.img} className="like-videos-card-img" alt="img" />
 
 				<div className="like-videos-card-content">
 					{item.name}

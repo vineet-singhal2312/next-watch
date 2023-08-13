@@ -26,7 +26,7 @@ export const PlaylistVideoCard = ({ video, playlistId }) => {
 		<>
 			{' '}
 			<Link className="link playlist-videos-card" href={`/videos/${video._id}`}>
-				<Image width={500} height={500} src={video.img} className="playlist-card-img" alt="img" />
+				<Image width={200} height={200} src={video.img} className="playlist-card-img" alt="img" />
 
 				<div className="playlist-videos-card-content">
 					<p>{video.name}</p>

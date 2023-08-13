@@ -13,7 +13,7 @@ export const WatchLaterCard = ({ item }) => {
 		<>
 			{' '}
 			<Link className="link watchlater-card" href={`/videos/${item._id}`}>
-				<Image width={500} height={500} src={item.img} className="watchlater-card-img" alt="img" />
+				<Image width={200} height={200} src={item.img} className="watchlater-card-img" alt="img" />
 
 				<div className="watchlater-card-content">
 					{item.name}

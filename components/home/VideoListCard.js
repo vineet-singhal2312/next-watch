@@ -30,7 +30,7 @@ export const VideoListCard = ({ item }) => {
 						postVideoInHistory(item._id);
 					}}
 				>
-					{item.img && <Image src={item.img} className="video-list-videoplayer" width={500} height={500} alt="product list img" />}
+					{item.img && <Image src={item.img} className="video-list-videoplayer" width={150} height={150} alt="product list img" />}
 					<div className="product-list-card-content">
 						<h4 className="product-list-card-name">{item.name}</h4>
 						<div className="product-list-card-details">
